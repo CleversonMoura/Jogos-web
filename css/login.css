@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilizar o placeholder */
+::placeholder {
+    color: var(--blue-light); /* Cor do texto do placeholder */
+    font-style: italic; /* Estilo da fonte */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+
+:root {
+    --blue-light: #8badf0;
+    --blue: #081e4a;
+    --blue-dark: #4e89e7;
+    --blue-darker: #0747be;
+}
+
+.flex{
+    background-image: linear-gradient(to bottom, var(--blue), var(--blue-darker));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex form{
+    color: var(--blue-light);
+    width: 600px;
+    height: 400px;
+    font-family: 'Monda', sans-serif;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.flex form h1{
+    padding: 10px;
+}
+
+.flex form .campos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.flex form .campos input{
+    width: 500px;
+    height: 60px;
+    font-family: 'Monda', sans-serif;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--blue-light);
+    color: var(--blue-light);
+}
+
+#nome, #email, #senha{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+#nome:focus, #email:focus, #senha:focus{
+    outline: none;
+    padding: 10px;
+}
+
+.flex form .campos #btn{
+    width: 300px;
+    height: 40px;
+    background-color: var(--blue-light);
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid var(--blue-light);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.flex form .campos #btn:hover{
+    width: 280px;
+    height: 45px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.flex form a{
+    text-decoration: none;
+    color: var(--blue-light);
+}

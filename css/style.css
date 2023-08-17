@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+
+:root {
+    --blue-light: #8badf0;
+    --blue: #081e4a;
+    --blue-dark: #4e89e7;
+    --blue-darker: #0747be;
+}
+
+.main {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), hsla(240, 100%, 25%, 1)), url('https://echoboomer.pt/wp-content/uploads/2021/06/jogos-de-apostas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titles {
+    width: 330px;
+    height: 100px;
+}
+
+/* LETRA D */
+
+.main .titleD {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+}
+
+.main .titleD #d1 {
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--blue-dark);
+    width: 25px;
+    height: 100px;
+}
+
+.main .titleD #d2 {
+    position: absolute;
+    border: 20px solid var(--blue-light);
+    border-left: none;
+    border-radius: 20% 50% 50% 20%;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+}
+
+/* LETRA A */
+
+.main .titleA {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+}
+
+.main .titleA #a1 {
+    position: absolute;
+    border-radius: 15px;
+    background-color: var(--blue-dark);
+    height: 105px;
+    width: 25px;
+    left: 90px;
+    rotate: 20deg;
+    top: -2px;
+}
+
+.main .titleA #a2 {
+    position: absolute;
+    border-radius: 15px;
+    background-color: var(--blue-light);
+    height: 105px;
+    width: 25px;
+    left: 121px;
+    rotate: -20deg;
+    top: -2px;
+}
+
+.main .titleA #a3 {
+    position: absolute;
+    background-color: var(--blue-darker);
+    rotate: 90deg;
+    height: 40px;
+    width: 20px;
+    left: 102px;
+    top: 50px;
+}
+
+/* LETRA Z */
+
+.main .titleZ {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+}
+
+.main .titleZ #z1 {
+    position: absolute;
+    border-radius: 15px;
+    rotate: 90deg;
+    height: 80px;
+    width: 25px;
+    background-color: var(--blue-light);
+    left: 195px;
+    top: -28px;
+}
+
+.main .titleZ #z2 {
+    position: absolute;
+    border-radius: 15px;
+    rotate: 90deg;
+    height: 80px;
+    width: 25px;
+    background-color: var(--blue-darker);
+    left: 195px;
+    top: 48px;
+}
+
+.main .titleZ #z3 {
+    position: absolute;
+    border-radius: 15px;
+    rotate: 37deg;
+    height: 119px;
+    width: 25px;
+    background-color: var(--blue-dark);
+    left: 195px;
+    top: -9px;
+}
+
+/* LETRA E */
+
+.main .titleE {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+}
+
+.main .titleE #e1 {
+    position: absolute;
+    border-radius: 15px;
+    height: 100px;
+    width: 25px;
+    background-color: var(--blue-light);
+    left: 258px;
+}
+
+.main .titleE #e2 {
+    position: absolute;
+    border-radius: 15px;
+    rotate: 90deg;
+    height: 70px;
+    width: 22px;
+    background-color: var(--blue-dark);
+    left: 282.5px;
+    top: -24px;
+}
+
+.main .titleE #e3 {
+    position: absolute;
+    border-radius: 15px;
+    rotate: 90deg;
+    height: 70px;
+    width: 22px;
+    background-color: var(--blue-dark);
+    left: 282.5px;
+    top: 54px;
+}
+
+.main .titleE #e4 {
+    position: absolute;
+    border-radius: 15px;
+    rotate: 90deg;
+    height: 70px;
+    width: 22px;
+    top: 14px;
+    background-color: var(--blue-dark);
+    left: 282.5px;
+}
+
+/* LINKS */
+
+.links{
+    text-align: center;
+    font-size: 22px;
+    width: 330px;
+    margin-top: 20px;
+}
+
+.links a{
+    color: var(--blue-light);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Monda', sans-serif;
+}
+
+.links #play{
+    border: 1px solid var(--blue-light);
+    border-radius: 5px;
+    padding: 7px;
+    animation: borda 7s alternate infinite ease-in-out;
+}
+
+/* ANIMÇOES DO TITULO */
+#d1:hover, #d2:hover, #a1:hover, #a2:hover, #a3:hover, #z1:hover,#z2:hover, #z3:hover, #e1:hover, #e2:hover, #e3:hover, #e4:hover{
+    animation: girar 1s linear infinite;
+}
+
+/* SOBRE */
+
+.sobre{
+    background-color: var(--blue-darker);
+    color: var(--blue-light);
+    padding: 10px;
+    font-family: 'Monda', sans-serif;
+}
+
+.sobre p{
+    font-size: 20px;
+}
+
+@keyframes borda {
+    25%{
+        border-top-left-radius: 50px;
+    }
+    50%{
+        border-top-right-radius: 50px;
+    }
+    75%{
+        border-bottom-right-radius: 50px;
+    }
+    100%{
+        border-bottom-left-radius: 50px;
+    }
+
+}
+
+@keyframes girar{
+    to{
+        rotate: 360deg;
+    }
+}
